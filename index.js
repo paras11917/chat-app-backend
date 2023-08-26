@@ -34,7 +34,7 @@ const server = http.createServer(app);
 // );
 const io = socket(server, {
   cors: {
-    origin: "https://64e9cec104ddee1f09bdd115--jovial-sunburst-080b1a.netlify.app/",
+    origin: "https://chat-app-frontend-cyan-eight.vercel.app/",
     credentials: true,
   },
 });
@@ -54,7 +54,7 @@ io.on("connection", (socket) => {
   });
 });
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 server.listen(port, () =>
   console.log(`Server started on ${process.env.PORT}`)
 );
