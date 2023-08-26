@@ -34,7 +34,7 @@ const server = http.createServer(app);
 // );
 const io = socket(server, {
   cors: {
-    origin: "https://chat-app-frontend-cyan-eight.vercel.app/",
+    origin: "https://chat-app-frontend-cyan-eight.vercel.app",
     credentials: true,
   },
 });
