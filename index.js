@@ -34,7 +34,7 @@ const server = http.createServer(app);
 // );
 const io = socket(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://64e9cec104ddee1f09bdd115--jovial-sunburst-080b1a.netlify.app/",
     credentials: true,
   },
 });
